@@ -31,7 +31,7 @@ const RatingSelector = ({
     } else if (type === "gradient") {
       const colorStops = [
         "rgba(255, 99, 71, 0.9)", // Red
-        "rgba(255, 255, 20, 0.75)", // Yellow
+        "#DDB633", // Yellow
         "rgba(144, 255, 144, 0.8)", // Green
       ];
       const segments = colorStops.length - 1;
@@ -74,7 +74,7 @@ const RatingSelector = ({
         colors.push("rgba(255, 99, 71, 0.9)");
       }
       for (let i = 0; i < yellowCount; i++) {
-        colors.push("rgba(255, 255, 20, 0.75)");
+        colors.push("#DDB633");
       }
       for (let i = 0; i < redCount; i++) {
         colors.push("rgba(144, 255, 144, 0.8)");
