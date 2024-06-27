@@ -50,3 +50,12 @@ body.scrolling * {
 .scroll-adjust {
   scroll-margin-top: 50px; /* Ajusta este valor según sea necesario */
 }
+select:required:invalid {
+  color: #9e9e9e; /* Color gris para el placeholder */
+}
+option[value=""][disabled] {
+  display: none; /* Esconde el placeholder cuando el select está abierto */
+}
+option {
+  color: white; /* Color negro para las opciones */
+}

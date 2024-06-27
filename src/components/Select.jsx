@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+// import "./Select.css"; // Asegúrate de importar el archivo CSS con los estilos definidos
 
 const Select = ({
   label,
@@ -28,7 +29,8 @@ const Select = ({
         name={name}
         value={value}
         onChange={handleSelectChange}
-        className="  text-sm rounded-lg block w-full p-2.5 bg-[#1E2E3F] placeholder-blue-800 text-white"
+        className="text-sm rounded-lg block w-full p-2.5 bg-[#1E2E3F] text-white"
+        required
       >
         <option value="" disabled hidden>
           {placeholder}

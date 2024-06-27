@@ -120,11 +120,11 @@ function Form() {
     [
       <InputField
         key="nombre_apellido"
-        label="Ingrese su nombre y apellido"
+        label="nombre y apellido"
         name="nombre_apellido"
         value={formData.nombre_apellido}
         onChange={handleChange}
-        placeholder="Ingrese su Nombre Completo"
+        placeholder="Ingrese su nombre completo"
         error={errors.nombre_apellido}
       />,
       <Select
@@ -134,17 +134,17 @@ function Form() {
         options={nombreColegioOptions}
         value={formData.nombre_colegio}
         onChange={handleChange}
-        placeholder="Seleccione su Institución Educativa"
+        placeholder="Seleccione su institución educativa"
         isOptional={false}
         error={errors.nombre_colegio}
       />,
       <InputField
         key="grado_seccion"
-        label="Grado y Sección"
+        label="Grado y sección"
         name="grado_seccion"
         value={formData.grado_seccion}
         onChange={handleChange}
-        placeholder="Ingrese su Grado y Sección"
+        placeholder="Ingrese su grado y sección"
         error={errors.grado_seccion}
       />,
       <InputField
@@ -153,7 +153,7 @@ function Form() {
         name="profesor"
         value={formData.profesor}
         onChange={handleChange}
-        placeholder="Ingrese el Nombre del/la profesor(a) CTC"
+        placeholder="Ingrese el nombre del/la profesor(a) CTC"
         isOptional={false}
         error={errors.profesor}
       />,
@@ -213,7 +213,7 @@ function Form() {
       />,
       <InputField
         key="otros_problemas_tecnicos"
-        label="Si marcaste Otro especifica que problemas técnicos surgieron"
+        label="Si marcaste 'Otro' especifica que problemas técnicos surgieron"
         name="otros_problemas_tecnicos"
         value={formData.otros_problemas_tecnicos}
         onChange={handleChange}
@@ -252,7 +252,7 @@ function Form() {
       <RatingSelector
         start={0}
         end={10}
-        label="En una escala del 0 al 10, que tanto recomendaria a otro(a) profesor(a) trabajar con CTC?"
+        label="En una escala del 0 al 10, ¿qué tanto recomendaria a otro(a) profesor(a) trabajar con CTC?"
         colorType="nps"
         selectedValue={String(formData.nps || 0)}
         onChange={handleChange}
@@ -262,7 +262,7 @@ function Form() {
       <RatingSelector
         start={0}
         end={10}
-        label="En una escala del 0 al 10, que tan satisfecho(a) se encuentra trabajando con CTC?"
+        label="En una escala del 0 al 10, ¿qué tan satisfecho(a) se encuentra trabajando con CTC?"
         colorType="gradient"
         selectedValue={String(formData.csat || 0)}
         onChange={handleChange}
