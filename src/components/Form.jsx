@@ -120,7 +120,7 @@ function Form() {
     [
       <InputField
         key="nombre_apellido"
-        label="nombre y apellido"
+        label="Nombre y apellido"
         name="nombre_apellido"
         value={formData.nombre_apellido}
         onChange={handleChange}
